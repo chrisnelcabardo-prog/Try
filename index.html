@@ -1,21 +1,28 @@
-<!DOXTYPE html>
+<!DOCTYPE html>
 <html>
+
 <body>
+  
+<style>
+body {
+    background-color: blue;
+}
 
-<h1> Hi, now I know what are the basics </h1>
+  
+<h1 id="title">Hi my name is Chrisnel!</h1>
 
-<p> My name is Chrisnel Cabardo from Milaor, when I was in JHS I like the EIM. But now I love to self study the programing, especially Html, Javascript, and Arduino or C++</p>
-
-  <button onclick="sayGoodbye()">
-Click Me
+<button onclick="changeText()">
+Continue
 </button>
 
-  <script>
-function sayGoodbye() {
-    alert("Goodbye and Thank You!!!");
+<script>
+
+function changeText() {
+    document.getElementById("title").innerHTML =
+    "I wish I can perfect my study in programing!";
 }
+
 </script>
 
 </body>
-
 </html>
