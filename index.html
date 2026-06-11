@@ -40,14 +40,23 @@ body {
 Continue
 </button>
 
+</div>
+  
 <script>
 
+  let step= 0;
+    
 function changeText() {
+
+  step++;
+
+  if(step == 1) {
     document.getElementById("title").innerHTML =
     "I wish I can perfect my study in programing!";
      document.body.style.backgroundColor = "red";
 }
-function changeText() {
+  
+   else if(step == 2) {
 
     document.getElementById("title").innerHTML =
     "Thank you";
